@@ -1,0 +1,117 @@
+<html>
+
+<head>
+    <title>Form Validation</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One" rel="stylesheet">
+
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <style>
+        body{
+            font-family: 'Racing Sans One', cursive;
+        }
+        td {
+            width: 300px;
+            text-align: left;
+        }
+
+        th {
+            width: 300px;
+            text-align: center;
+        }
+
+        input {
+            width: 300px;
+        }
+
+        span {
+            color: red;
+        }
+
+        .spanClass {
+            width: 500px;
+            text-align: center;
+        }
+
+        #wrapper {
+            width: 100%;
+            padding-bottom: 50px;
+            padding-top: 50px;
+        }
+
+        #formID,
+        #div2 {
+            width: 70%;
+            margin: 0 auto;
+            padding-bottom: 50px;
+        }
+
+        .col1 {
+            text-align: right;
+            padding-right: 15px;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body onload= "init()">
+    <div id="wrapper">
+        <div id="formID">
+            <!-- <form name="f1" action="" onsubmit="return validate()"> -->
+            <div class="w3-container w3-teal" style="text-align:center;">
+                <p style="font-size: 35px;">Store in Local Storage and Display from it</p>
+            </div>
+            <form class="w3-container w3-card-4">
+
+            </form>
+
+            <p>
+                <input class="w3-input" type="text" id="name" placeholder="Name" />
+                <span id="nameloc"></span>
+            </p>
+            <p>
+                <input class="w3-input" type="text" id="uname" placeholder="Username" />
+                <span id="unameloc"></span>
+            </p>
+
+            <p>
+                <input class="w3-input" type="number" id="age" placeholder="age" />
+                <span id="ageloc"></span>
+            </p>
+
+            <p>
+                <input class="w3-input" type="password" id="password" placeholder="Password" />
+                <span id="passwordloc"></span>
+            </p>
+
+            <input type="submit" class="w3-btn w3-teal w3-padding-large" value="Submit" onclick="validate()" />
+            <input type="submit" class="w3-btn w3-teal w3-padding-large" value="Clear Local Storage" onclick="clearLS()" />
+
+            <!-- </form> -->
+        </div>
+    </div>
+
+    <div id="div2">
+        <div id="tableDiv">
+            <table class="w3-table-all w3-card-4">
+                <tr class="w3-teal">
+                    <th>Name</th>
+                    <th>Username</th>
+                    <th>Age</th>
+                    <th>Password</th>
+                </tr>
+            </table>
+            <table class="w3-table-all w3-card-4" id="infoTable">
+            </table>
+        </div>
+    </div>
+
+</body>
+
+</html>
